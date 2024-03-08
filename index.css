@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: "Open Sans" !important;
+    
 }
 .navbar{
     z-index: 1;
@@ -97,6 +98,7 @@ ul{
     display: flex;
     justify-content: right;
     align-items: center;
+    width: 99vw;
     /* flex-direction: column; */
 
 }
@@ -109,6 +111,7 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .mysubheading {
@@ -148,7 +151,9 @@ ul{
     left: 130%;
     background-color: white;
 }
-
+.whyTrainer{
+    width: 99vw;
+}
 .dogimage3 {
     padding: 5%;
     background: url(https://images.pexels.com/photos/1618707/pexels-photo-1618707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);

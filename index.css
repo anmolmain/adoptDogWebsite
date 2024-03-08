@@ -2,11 +2,13 @@
     margin: 0px;
     padding: 0px;
     font-family: "Open Sans" !important;
-    
+
 }
-.navbar{
+
+.navbar {
     z-index: 1;
 }
+
 .backGroundImage {
     width: 100%;
     height: 90vh;
@@ -27,7 +29,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position:right;
+    background-position: right;
     filter: brightness(0.5);
 }
 
@@ -68,19 +70,23 @@
     width: 100vw;
     justify-content: space-between;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-weight: 900;
 }
-ul{
+
+ul {
     width: 50%;
     /* border: 2px solid black; */
     margin-left: auto;
     justify-content: space-between;
 }
-.navbar-nav li{
+
+.navbar-nav li {
     justify-content: space-between;
     font-weight: 600;
 }
+
 .AdvanceTrainingDiv .heading {
     font-size: calc(0.8vw*1.1 + 1vh*1.1);
     text-align: center;
@@ -111,7 +117,7 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
 .mysubheading {
@@ -129,7 +135,7 @@ ul{
     top: 50%;
     left: 10%;
     background-color: white;
-    
+
 }
 
 .dogimage2 {
@@ -151,9 +157,11 @@ ul{
     left: 130%;
     background-color: white;
 }
-.whyTrainer{
+
+.whyTrainer {
     width: 99vw;
 }
+
 .dogimage3 {
     padding: 5%;
     background: url(https://images.pexels.com/photos/1618707/pexels-photo-1618707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
@@ -173,11 +181,13 @@ ul{
     background-repeat: no-repeat;
     background-position: center;
 }
-.unbreakableBond{
+
+.unbreakableBond {
     background-color: rgba(8, 75, 8, 0.822);
     padding: 5%;
     text-align: justify;
 }
+
 .unbreakableBond .heading {
     color: white;
     font-size: calc(0.8vw*2 + 1vh*2);
@@ -197,43 +207,52 @@ ul{
     font-size: calc(0.8vw*1 + 1vh*1);
 
 }
-.StepsOfAdoption{
+
+.StepsOfAdoption {
     background-color: rgba(8, 75, 8, 0.822);
     padding: 5%;
     text-align: justify;
 }
-.boldSpanTag{
+
+.boldSpanTag {
     font-size: calc(0.8vw*2 + 1vh*2);
 }
-.petDogImg{
+
+.petDogImg {
     width: 100%;
 }
-.phases{
+
+.phases {
     background-color: white;
     /* padding: 1%; */
     width: 100%;
 }
-.petDogImgDiv{
+
+.petDogImgDiv {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.StepsOfAdoption .heading{
+
+.StepsOfAdoption .heading {
     color: gray;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: calc(0.8vw*1.3 + 1vh*1.3);
 }
-.StepsOfAdoption .subheading{
+
+.StepsOfAdoption .subheading {
     color: gray;
     font-weight: 600;
     font-size: calc(0.8vw*0.9 + 1vh*0.9);
 }
-.phases .col-6{
+
+.phases .col-6 {
     justify-content: space-between;
-    
+
 }
-.footer{
+
+.footer {
     background-color: rgba(8, 75, 8, 0.822);
 }

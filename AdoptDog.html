@@ -4,21 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Adopt a Dog from A-Care</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-
+    <title>Pet Adoption Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             background-color: rgba(8, 75, 8, 0.822);
             color: gray;
             font-family: "Open Sans";
         }
-
         .step-img {
             max-width: 100%;
             border-radius: 10px;
@@ -59,7 +52,54 @@
         .row {
             justify-content: space-around;
         }
+
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            color: #28a745;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-control:focus {
+            border-color: #28a745;
+            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+        }
+
+        .btn-submit {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+        }
+
+        .btn-submit:hover {
+            background-color: #218838;
+        }
     </style>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 
 <body>
@@ -69,9 +109,8 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -89,7 +128,7 @@
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html#ContactUs">Contact</a>
+                    <a class="nav-link" href="#ContactUs">Contact</a>
                 </li>
             </ul>
         </div>
@@ -148,9 +187,132 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="form-container">
+            <h2>Pet Adoption Form</h2>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="pet-type">Pet Type</label>
+                            <select class="form-control" id="pet-type" required>
+                                <option value="">Select Pet Type</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="bird">Bird</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="pet-name">Pet Name</label>
+                            <input type="text" class="form-control" id="pet-name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="pet-age">Pet Age</label>
+                            <input type="number" class="form-control" id="pet-age" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="pet-gender">Pet Gender</label>
+                            <select class="form-control" id="pet-gender" required>
+                                <option value="">Select Pet Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="pet-breed">Pet Breed</label>
+                            <input type="text" class="form-control" id="pet-breed" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="pet-description">Pet Description</label>
+                            <textarea class="form-control" id="pet-description" rows="3" required></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="previous-pet">Previous Pet Ownership</label>
+                            <input type="text" class="form-control" id="previous-pet" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="housing-type">Housing Type</label>
+                            <select class="form-control" id="housing-type" required>
+                                <option value="">Select Housing Type</option>
+                                <option value="house">House</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="condo">Condo</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="pet-care-experience">Pet Care Experience</label>
+                            <input type="text" class="form-control" id="pet-care-experience" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="other-pets">Other Pets in the Household</label>
+                            <input type="text" class="form-control" id="other-pets" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="time-commitment">Time Commitment</label>
+                            <input type="text" class="form-control" id="time-commitment" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-submit btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
